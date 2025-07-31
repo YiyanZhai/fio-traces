@@ -26,3 +26,11 @@ size = obj_size;
 ```
 
 to simulate logical block access with 4KB alignment.
+
+## Decompress
+
+To decompress the traces, use the following command under `./cloudphysics_fio_traces_compressed`:
+
+```bash
+xz -d w76.fio.xz
+```

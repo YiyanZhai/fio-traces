@@ -3,7 +3,7 @@
 This dataset contains fio I/O logs derived from [CloudPhysics](https://ftp.pdl.cmu.edu/pub/datasets/twemcacheWorkload/cacheDatasets/cloudphysics/). The traces have been transformed into formats described in [FIO Trace file format](https://fio.readthedocs.io/en/latest/fio_doc.html#trace-file-format-v2).
 
 ## Content
-In `cloudphysics_fio_traces.tar.xz`, there is `w01.fio` to `w106.fio` trace files (v2 format).
+In `cloudphysics_fio_traces_compressed`, there are the compressed `w01.fio` to `w106.fio` trace files (v2 format).
 
 ## How the Conversion Was Done
 
@@ -26,11 +26,3 @@ size = obj_size;
 ```
 
 to simulate logical block access with 4KB alignment.
-
-
-## Compression
-The folder containing the `*.fio` files are compressed using
-
-```bash
-tar -cJf cloudphysics_v2_fio.tar.xz cloudphysics_v2_fio
-```
